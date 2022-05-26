@@ -1,0 +1,27 @@
+{
+  "name": "4as-t-us",
+  "version": "1.0.0",
+  "description": "Site vitrine association de poker 4As-t-us",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:prod": "sass --no-source-map ./src/style/style.min.css:./public/css/style.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoiFranc/4As-t-us.git"
+  },
+  "author": "SoiFranc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoiFranc/4As-t-us/issues"
+  },
+  "homepage": "https://github.com/SoiFranc/4As-t-us#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "sass": "^1.52.1"
+  }
+}
