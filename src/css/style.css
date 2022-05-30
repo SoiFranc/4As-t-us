@@ -76,35 +76,39 @@ table {
 /* ******************** GENERAL ********************** */
 h1 {
   text-align: center;
-  font-size: 3.2em;
+  font-size: 2.4em;
   font-family: "Fredericka the Great", arial, sans-serif, system-ui, roboto;
+  margin-bottom: 80px;
 }
 
 h2 {
   text-align: center;
-  font-size: 2.56em;
+  font-size: 1.92em;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 h3 {
-  font-size: 2.24em;
+  font-size: 1.68em;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 
 h4 {
-  font-size: 1.76em;
-  margin-top: 10px;
+  font-size: 1.32em;
+  margin-bottom: 10px;
 }
 
 h5 {
-  font-size: 1.68em;
+  font-size: 1.26em;
 }
 
 p {
+  font-size: 1.2em;
   margin-top: 15px;
-  font-size: 1.6em;
 }
 
-span.md, span.lg, div.md.map, div.lg.map, .xl {
+span.md, span.lg, div.md.map, div.lg.map, .xl, div#divSideImglg {
   display: none;
 }
 
@@ -114,6 +118,10 @@ div.text {
 
 body {
   background-color: #000;
+}
+
+h1, h2, h3, h4, p, ul, li {
+  color: #fff;
 }
 
 /* ******************** NAVBAR MENU ********************** */
@@ -134,6 +142,15 @@ img#img4As {
 
 a span.brand {
   vertical-align: 50%;
+}
+
+a.nav-link:hover, button.navbar-toggler:hover, a.navbar-brand:hover {
+  color: red;
+}
+
+a span.brand:hover {
+  vertical-align: 50%;
+  color: red;
 }
 
 /*
@@ -212,6 +229,11 @@ button:focus div#bebe {
   }
 }
 */
+/* ******************** SECTION LE CLUB ********************** */
+.center {
+  text-align: center;
+}
+
 /* ******************** PRESENTATION ********************** */
 div.mainTopPresentationDivH1 {
   width: 100%;
@@ -675,12 +697,22 @@ div.bibiCenter {
     height: 181px;
   }
 
-  span.lg, div.lg.map, #lgImg3 {
+  span.lg, div.lg.map, #lgImg3, div#divSideImglg {
     display: unset;
   }
 
   .noLg {
     display: none;
+  }
+
+  /*** (lg) HOMEPAGE (lg) ***/
+  /*img#1.imgSideImgLg {
+    margin-left: 1px;
+  }*/
+  div.homepage {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
   }
 
   /*** (lg) EXPEREINCE (lg) ***/
@@ -828,26 +860,33 @@ div.bibiCenter {
 }
 /********************* FOOTER ***********************/
 footer {
+  margin-top: 150px;
   bottom: 0px;
 }
 
 div.footer-copyright {
   background-color: #000;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 1.2em;
   text-align: center;
   margin-top: 50px;
 }
 
 i.bi.bibiUp.bi-chevron-up {
-  font-size: 3.2em;
+  font-size: 1.2em;
   color: #fff;
   text-align: center;
   margin-top: 5px;
+  padding-left: 50%;
 }
 
 div.pageUp {
-  margin-bottom: 100px;
+  margin: 0px;
+  color: NB000;
+}
+div.pageUp p {
+  text-align: center;
+  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

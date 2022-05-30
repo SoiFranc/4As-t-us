@@ -1,20 +1,29 @@
 /********************* FOOTER ***********************/
 footer {
+  margin-top: 150px;
   bottom: 0px;
 }
 div.footer-copyright {
   background-color: $NB1000;
   color:$NB000;
-  font-size: $sizeP* 0.5;
+  font-size: $sizeP* 1;
   text-align: center;
   margin-top:50px;
 }
 i.bi.bibiUp.bi-chevron-up {
-  font-size: $sizeP* 2;
+  font-size: $sizeP* 1;
   color:$NB000;
   text-align: center;
   margin-top:5px;
+  padding-left: 50%;
 }
 div.pageUp {
-  margin-bottom: 100px;;
+  margin: 0px;
+
+  
+  color: NB000;
+  & p {
+    text-align: center;
+    margin:0px;
+  }
 }

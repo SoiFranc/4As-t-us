@@ -14,6 +14,15 @@ img#img4As {
 a span.brand {
   vertical-align: 50%;
 }
+a.nav-link:hover, button.navbar-toggler:hover, a.navbar-brand:hover {
+  color:red;
+}
+a span.brand:hover {
+  vertical-align: 50%;
+  color:red;
+}
+
+
 /*
 div.header-nav {
   background: $HOT500;

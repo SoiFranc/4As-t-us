@@ -4,7 +4,9 @@
   span.md, div.md.map, #mdImg2 {
       display:unset;
   }
+  
 }
+
 
 /*************************************************************/
 /********************* Responsive  Lg **********************/
@@ -13,12 +15,24 @@
       width:auto;
       height:181px;
   }
-  span.lg, div.lg.map, #lgImg3 {
+  span.lg, div.lg.map, #lgImg3, div#divSideImglg {
       display:unset;
   }
   .noLg {
       display:none;
   }
+
+
+  /*** (lg) HOMEPAGE (lg) ***/
+  /*img#1.imgSideImgLg {
+    margin-left: 1px;
+  }*/
+  div.homepage {
+    display:flex;
+    flex-direction:row;
+    margin-top:100px;
+  }
+  
 
   /*** (lg) EXPEREINCE (lg) ***/
   .timeline:before /* Cela veut dire: AVANT Evênement timeline, Dessine la Timeline */

@@ -19,7 +19,7 @@
 }    
 
 /* ******************** var font-size  ******************** */
-$sizeP: 1.6em;/*100%*/
+$sizeP: 1.2em;/*100%*/
 $NB000: #fff;
 $NB250: #E6E6E8;
 $NB500: #cacaca;
@@ -36,29 +36,33 @@ h1 {
     text-align: center;
     font-size: $sizeP* 2;
     font-family: $police;
+    margin-bottom: 80px;
 }
 h2 {
     text-align: center;
     font-size: $sizeP*1.6;
+    margin-bottom:40px;
+    margin-top:40px;
 }
 h3 {
     font-size: $sizeP* 1.4;
+    margin-bottom:20px;
     margin-top:20px;
 }
 h4 {
     font-size: $sizeP* 1.1;
-    margin-top:10px;
+    margin-bottom:10px;
 }
 h5 {
     font-size: $sizeP* 1.05;    
 }
 p {
-    margin-top:15px;
     font-size: $sizeP* 1;
+    margin-top:15px;
 }
 
 
-span.md, span.lg, div.md.map, div.lg.map, .xl {
+span.md, span.lg, div.md.map, div.lg.map, .xl, div#divSideImglg {
     display:none;
 }
 
@@ -68,4 +72,8 @@ div.text{
 
 body {
     background-color: $NB1000;
+}
+
+h1, h2, h3, h4, p, ul, li {
+    color:$NB000;
 }
