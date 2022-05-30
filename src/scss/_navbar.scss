@@ -1,0 +1,92 @@
+/* ******************** NAVBAR MENU ********************** */
+
+nav.navbar {
+  background-color: $NB1000;
+  height:80px;/*!Ne pas enlever bar menu fixe!!!!*/
+}
+a.nav-link, button.navbar-toggler, a.navbar-brand {
+  color:$NB000;
+}
+img#img4As {
+  height:auto;
+  max-width: 80px;
+}
+a span.brand {
+  vertical-align: 50%;
+}
+/*
+div.header-nav {
+  background: $HOT500;
+  height:80px;/*!Ne pas enlever bar menu fixe * /
+}
+
+a.navbar-brand img {
+  width:40px;
+  height:40px;
+}
+
+div.headerMenu {
+  width:100vw;
+}
+
+nav.a:hover {
+  color: $HOT500;
+  fill:rgba(255,115,5,0.8);
+}
+
+nav a svg.myLogo {
+    width:14px;
+    height:auto;
+    fill: $NB750;
+  
+  &:hover {
+    fill:rgba(255,115,5,0.8);
+  }
+}
+
+div.headerNavButtonDiv {
+  background-image: url(../../public/img/1pic.jpg);
+}
+
+button div img {
+  
+  width:20px;
+  height:20px;
+}
+
+button:focus div#bebe {
+  display:none;
+  width:20px;
+  height:20px;
+}
+
+/* Classe principale de la barre de navigation * /
+.navbar {
+  /* Couleur de fond de la barre de navigation * /
+  background-color: $NB000;
+  border-color: $NB000;
+  font-size: $sizeP* 1.2;
+
+  /* Couleur des titres affichés dans la barre * /
+  & .navbar-brand {
+    color: $NB800;
+    font-family: $police;
+    font-size: $sizeP* 1.2;
+  
+    /* Couleur utilisée lors du passage de la souris sur un titre de la barre * /
+    &:hover, :focus {
+      color: $HOT500;
+    }
+  }
+
+  /* Couleur utilisée pour les liens * /
+  & .navbar-nav > li > a {
+    color: $NB800;
+
+    /*Couleur utilisée pour les liens lorsque la souris passe dessus * /
+    &:hover, &:focus {
+      color: $HOT500;
+    }
+  }
+}
+*/

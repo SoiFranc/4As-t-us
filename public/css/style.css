@@ -1,0 +1,856 @@
+@charset "UTF-8";
+/* ******************** RESET ********************** */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0a | 20110126
+   License: none (public domain)
+*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* import icons bootsrap5*/
+/* import fonts*/
+/* ******************** var color this style is recoded to $var hidden ******************** * /
+:root {
+    --NB000: #fff;/*white - rgb(255,255,255) - hsl(0, 0%, 100%)* /
+    --NB250: #E6E6E8;/*rgb(230,230,232) - hsl(240, 4%, 91%)* /
+    --NB500: #cacaca;/*rgb(202,202,202) - hsl(0, 0%, 79%)* /
+    --NB750: #878787;/*rgb(135,135,135) - hsl(0, 0%, 53%)* /
+    --NB800: #404040;/*rgb(64,64,64) - hsl(0, 0%, 25%)* /
+    --NB1000: #000;/*black - rgb(0,0,0) - hsl(0, 0%, 0%)* /
+    --HOT100: #FFF800;/*rgb(255,248,0) - hsl(58, 100%, 50%)* /
+    --HOT500: #FF7305;/*rgb(255,115,5) - hsl(26, 100%, 51%)* /
+    --HOT900: #FF0000;/*red - rgb(255,0,0) - hsl(0, 100%, 50%)* /
+    --police: 'Fredericka the Great', arial, sans-serif, system-ui, roboto;
+}    
+
+/* ******************** var font-size  ******************** */
+/*100%*/
+/* ******************** GENERAL ********************** */
+h1 {
+  text-align: center;
+  font-size: 3.2em;
+  font-family: "Fredericka the Great", arial, sans-serif, system-ui, roboto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.56em;
+}
+
+h3 {
+  font-size: 2.24em;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 1.76em;
+  margin-top: 10px;
+}
+
+h5 {
+  font-size: 1.68em;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 1.6em;
+}
+
+span.md, span.lg, div.md.map, div.lg.map, .xl {
+  display: none;
+}
+
+div.text {
+  padding: 0 20px;
+}
+
+body {
+  background-color: #000;
+}
+
+/* ******************** NAVBAR MENU ********************** */
+nav.navbar {
+  background-color: #000;
+  height: 80px;
+  /*!Ne pas enlever bar menu fixe!!!!*/
+}
+
+a.nav-link, button.navbar-toggler, a.navbar-brand {
+  color: #fff;
+}
+
+img#img4As {
+  height: auto;
+  max-width: 80px;
+}
+
+a span.brand {
+  vertical-align: 50%;
+}
+
+/*
+div.header-nav {
+  background: $HOT500;
+  height:80px;/*!Ne pas enlever bar menu fixe * /
+}
+
+a.navbar-brand img {
+  width:40px;
+  height:40px;
+}
+
+div.headerMenu {
+  width:100vw;
+}
+
+nav.a:hover {
+  color: $HOT500;
+  fill:rgba(255,115,5,0.8);
+}
+
+nav a svg.myLogo {
+    width:14px;
+    height:auto;
+    fill: $NB750;
+
+  &:hover {
+    fill:rgba(255,115,5,0.8);
+  }
+}
+
+div.headerNavButtonDiv {
+  background-image: url(../../public/img/1pic.jpg);
+}
+
+button div img {
+
+  width:20px;
+  height:20px;
+}
+
+button:focus div#bebe {
+  display:none;
+  width:20px;
+  height:20px;
+}
+
+/* Classe principale de la barre de navigation * /
+.navbar {
+  /* Couleur de fond de la barre de navigation * /
+  background-color: $NB000;
+  border-color: $NB000;
+  font-size: $sizeP* 1.2;
+
+  /* Couleur des titres affichés dans la barre * /
+  & .navbar-brand {
+    color: $NB800;
+    font-family: $police;
+    font-size: $sizeP* 1.2;
+
+    /* Couleur utilisée lors du passage de la souris sur un titre de la barre * /
+    &:hover, :focus {
+      color: $HOT500;
+    }
+  }
+
+  /* Couleur utilisée pour les liens * /
+  & .navbar-nav > li > a {
+    color: $NB800;
+
+    /*Couleur utilisée pour les liens lorsque la souris passe dessus * /
+    &:hover, &:focus {
+      color: $HOT500;
+    }
+  }
+}
+*/
+/* ******************** PRESENTATION ********************** */
+div.mainTopPresentationDivH1 {
+  width: 100%;
+  color: var(--HOT500);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div svg {
+  width: 32px;
+  height: auto;
+  fill: rgba(255, 115, 5, 0.8);
+}
+
+div .lineSeparatorH1 {
+  margin: 0px auto 0px -35px;
+  border: 0.5px dashed rgba(255, 115, 5, 0.8);
+  width: 51vw;
+  text-align: center;
+  box-shadow: 1px 0.5px 2px 0px var(--NB1000);
+}
+
+div.mainTopPresentationImg#mainTopPresentationImgCss {
+  display: flex;
+  margin-top: 16px;
+  width: 100%;
+  height: 70vh;
+  background-image: url("../img/imgPresentation.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mainTopPresentationDivH1 svg {
+  width: 35px;
+  height: auto;
+  margin-right: 30px;
+}
+
+.divH1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ******************** SECTION WELCOME ********************** */
+div#welcomeIcon {
+  background-image: url(../bootstrap-icons-1.8.1/bookmark-check.svg);
+}
+
+div.text {
+  padding: 0 20vw;
+}
+
+/* ******************** SECTION EXPERIENCES ********************** */
+div#experiencesIcon {
+  background-image: url(../bootstrap-icons-1.8.1/building.svg);
+}
+
+.timeline {
+  padding: 30px 10px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  /* il faut présence d'un "content", si non pas de contenu et pas de Before */
+  width: 2px;
+  /*width: 5px;*/
+  background: var(--NB800);
+  left: 40px;
+  /* elle se place à 50% de ecran, attention epaisseur du trait */
+  margin-left: -1px;
+  /*margin-left: -2.5px; on décale le trait de 1/2 epaisseur du trait vers la droite */
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline > li:after {
+  clear: both;
+  /* Nettoyer les float left et right */
+}
+
+.timeline > li:before, .timeline > li:after {
+  content: " ";
+  /* pour voir le content il faut que "content soit présent */
+  display: table;
+}
+
+.timeline li .timeline-badge {
+  color: var(--HOT500);
+  width: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 30px;
+  margin-left: -25px;
+  background-color: var(--NB800);
+  border: 1px solid var(--NB500);
+  border-radius: 80%;
+  /*border-radius: 50%;*/
+}
+
+.timeline-panel-container {
+  width: 90%;
+  float: left;
+}
+
+.timeline-panel-container-inverted {
+  width: 90%;
+  float: left;
+}
+
+.timeline-panel {
+  width: 90%;
+  float: left;
+  margin-left: 67.5px;
+  border: 1px solid var(--NB000);
+  border-radius: 7px;
+  padding: 20px 25px;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  background: var(--NB750);
+}
+
+.timeline-panel-container-inverted .timeline-panel {
+  float: left;
+  margin-left: 67.5px;
+}
+
+.timeline-panel:after {
+  position: absolute;
+  top: 27px;
+  left: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid var(--NB750);
+  border-right: 0 solid var(--NB750);
+  border-bottom: 14px solid transparent;
+  content: " ";
+  border-left-width: 0;
+  border-right-width: 14px;
+  right: auto;
+}
+
+.timeline-panel-container-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.timeline-heading h3 {
+  margin-top: 5px;
+  font-size: 20px;
+  color: var(--NB000);
+}
+
+.timeline-heading h4 {
+  color: var(--HOT500);
+}
+
+p#yearToYear {
+  color: var(--NB000);
+}
+
+/* ******************** SECTION STUDIES ********************** */
+section.StudyFormation:before {
+  position: absolute;
+  left: calc(50vw - 14px);
+  /*!!!attention formule respecter les espaces!!!!*/
+  width: 28px;
+  height: 14px;
+  border-top: 14px solid var(--NB000);
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 0 solid var(--NB000);
+  padding: 0px;
+  content: "";
+}
+
+section.StudyFormation:after {
+  position: absolute;
+  left: calc(50vw - 14px);
+  /*!!!attention formule respecter les espaces!!!!*/
+  margin-top: -14px;
+  width: 28px;
+  height: 14px;
+  border-top: 0 solid var(--NB000);
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid var(--NB000);
+  padding: 0px;
+  content: "";
+}
+
+i.bi.bi-mortarboard-fill {
+  font-size: 32px;
+  color: var(--HOT500);
+}
+
+div.backgroundStudyFormation {
+  background-color: var(--NB800);
+  padding: 70px 47.5px 104px;
+}
+
+div.studyH2 > h2 {
+  color: var(--NB000);
+}
+
+span.minimise {
+  font-size: 12px;
+}
+
+div.studiPlusLogo {
+  text-align: center;
+  margin: 50px 0 50px 0;
+}
+
+div.studiPlusLogo img {
+  width: 75%;
+}
+
+div.certificate.col-sm-12.col-md-6 {
+  width: 100%;
+}
+
+div.certificate {
+  background-color: var(--NB750);
+  display: inline-block;
+  border-radius: 20px;
+}
+
+div.content.mainCertificate, div.certificateAside, div.certificateMain {
+  margin-bottom: 55px;
+}
+
+div.certificate > div.bibiCertificateIcon {
+  text-align: center;
+  font-size: 24px;
+  color: var(--NB800);
+}
+
+div.certificate h3 {
+  text-decoration: none;
+  text-align: center;
+  color: var(--NB000);
+}
+
+div.certificate h4 {
+  margin-bottom: 30px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--NB800);
+}
+
+div.certificate p {
+  text-align: center;
+  color: var(--NB000);
+}
+
+i.bibi {
+  font-size: 32px;
+  color: var(--NB000);
+  text-align: center;
+}
+
+/********************* SECTION TECHNICAL SKILLS ***********************/
+div#skillsIcon {
+  background-image: url(../bootstrap-icons-1.8.1/keyboard.svg);
+}
+
+div.skillsTechnic {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+/*
+div.langages, div.toolsLangages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}*/
+div.progressTheme {
+  background-color: var(--NB500);
+}
+
+.progressH {
+  margin-left: 5px;
+}
+
+div.progress {
+  width: 90%;
+  margin-left: 5px;
+  background-color: var(--NB1000);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+div.progress-bar {
+  background-color: VAR(--HOT500);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Progressbar transition :hover*/
+.progressTheme {
+  width: 500px;
+  text-align: center;
+}
+
+.progress {
+  border-radius: 10px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar {
+  height: 15px;
+  margin-top: 1px;
+  background-color: #ee303c;
+  border-top-right-radius: 10px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+div.progressTheme:hover .progress-bar.seventy {
+  width: 100%;
+  animation: progressAnimationStrikeSeventy 3.5s;
+}
+
+@keyframes progressAnimationStrikeSeventy {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+div.progressTheme:hover .progress-bar.eighty-five {
+  width: 100%;
+  animation: progressAnimationStrikeEightyFive 4.25s;
+}
+
+@keyframes progressAnimationStrikeEightyFive {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+div.progressTheme:hover .progress-bar.ninety {
+  width: 100%;
+  animation: progressAnimationStrikeNinety 4.5s;
+}
+
+@keyframes progressAnimationStrikeNinety {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+div.progressTheme:hover .progress-bar.hundred {
+  width: 100%;
+  animation: progressAnimationStrikeHundred 5s;
+}
+
+@keyframes progressAnimationStrikeHundred {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/********************* SECTION CONTACT ***********************/
+section#coordonate {
+  height: 100%;
+}
+
+div.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.carteMap {
+  width: 240px;
+  /*100%;*/
+  height: auto;
+}
+
+img#mapImg {
+  width: 240px;
+}
+
+div.myCoordonatesPro {
+  background-color: var(--NB800);
+  height: 100%;
+  border-radius: 1px solid var(--NB000);
+  color: var(--NB000);
+  padding: 10vw 0 10vw 0;
+  border-radius: 10px;
+  box-shadow: 1px 3.5px 10px -3px var(--NB800);
+  width: 240px;
+  height: 100%;
+}
+
+i.bi.bi-person-lines-fill {
+  color: var(--NB000);
+  font-size: 32px;
+}
+
+div.coordonatesContent h5, div.coordonatesContent P {
+  text-align: center;
+  color: var(--NB000);
+}
+
+div.bibiCenter {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.downloadFile {
+  border-radius: 5px;
+  background-color: var(--NB250);
+}
+
+.btnDownload:hover {
+  border-color: var(--HOT500);
+}
+
+.btnDownload:focus {
+  background-color: var(--HOT500);
+}
+
+/*************************************************************/
+/********************* Responsive Tablet *********************/
+@media only screen and (min-width: 415px) {
+  span.md, div.md.map, #mdImg2 {
+    display: unset;
+  }
+}
+/*************************************************************/
+/********************* Responsive  Lg **********************/
+@media only screen and (min-width: 769px) {
+  div.mainTopLogo img {
+    width: auto;
+    height: 181px;
+  }
+
+  span.lg, div.lg.map, #lgImg3 {
+    display: unset;
+  }
+
+  .noLg {
+    display: none;
+  }
+
+  /*** (lg) EXPEREINCE (lg) ***/
+  .timeline:before {
+    left: 50%;
+    /* elle se place à 50% de ecran, attention epaisseur du trait */
+  }
+
+  .timeline li .timeline-badge {
+    left: 50%;
+  }
+
+  .timeline-panel-container {
+    width: 50%;
+  }
+
+  .timeline-panel-container-inverted {
+    width: 50%;
+    float: right;
+  }
+
+  .timeline-panel {
+    float: right;
+    margin-right: 40px;
+  }
+
+  .timeline-panel-container-inverted .timeline-panel {
+    margin-left: 40px;
+  }
+
+  .timeline-panel:after {
+    display: none;
+  }
+
+  .timeline-panel:before {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    /*right: -14px;*/
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid var(--NB750);
+    border-right: 0 solid var(--NB750);
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
+
+  .timeline-panel-container-inverted .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+
+  /*** (lg) STUDIES (lg) ***/
+  div.sectionsCerticate.row {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  div.mainCertificate {
+    padding-right: 5vw;
+  }
+
+  div.asideCertificate {
+    padding-left: 5vw;
+  }
+
+  div.subsectionCertificate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  div.container.certificate {
+    width: 100%;
+    background-color: var(--NB750);
+    display: inline-block;
+    border-radius: 20px;
+  }
+
+  div.container.main {
+    height: 100%;
+  }
+
+  /*** (lg) SKILLS (lg) ***/
+  div.skillsTechnic {
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  /*** (lg) CONTACT (lg) ***/
+  /*div.contactUs {
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:flex-start;
+      align-content: center;
+  }*/
+  div.myCoordonatesPro {
+    /* position:absolute;*/
+    z-index: 2;
+    width: 360px;
+  }
+
+  /*
+  div#contactMap {
+      position: relative;
+      right:0px;
+      width:240px;
+      height:100%;
+  }*/
+  div.carteMap {
+    /* position:relative;*/
+    width: 100%;
+    /*100%;*/
+    height: auto;
+    top: 330px;
+    right: 20px;
+  }
+
+  img#mapImg {
+    width: 100%;
+    height: auto;
+  }
+
+  div.contact {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+/***************************************************************/
+/******************* Responsive Desktop xl ********************/
+@media only screen and (min-width: 1192px) {
+  .nolx {
+    display: none;
+  }
+
+  .xl {
+    display: unset;
+  }
+}
+/********************* FOOTER ***********************/
+footer {
+  bottom: 0px;
+}
+
+div.footer-copyright {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+i.bi.bibiUp.bi-chevron-up {
+  font-size: 3.2em;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+}
+
+div.pageUp {
+  margin-bottom: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
