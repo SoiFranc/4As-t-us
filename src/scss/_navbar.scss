@@ -13,13 +13,15 @@ img#img4As {
 }
 a span.brand {
   vertical-align: 50%;
+  margin-right:100px;
+  font-size:$sizeP*1.2;
 }
 a.nav-link:hover, button.navbar-toggler:hover, a.navbar-brand:hover {
-  color:red;
+  color:$HOT900;
 }
 a span.brand:hover {
   vertical-align: 50%;
-  color:red;
+  color:$HOT900;
 }
 
 

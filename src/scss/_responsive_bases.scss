@@ -32,7 +32,21 @@
     flex-direction:row;
     margin-top:100px;
   }
-  
+  section.container.padded {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content:space-between;
+    padding:0 5%;
+  }
+  div.containerCta {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+  }
+
+
+
 
   /*** (lg) EXPEREINCE (lg) ***/
   .timeline:before /* Cela veut dire: AVANT Evênement timeline, Dessine la Timeline */
