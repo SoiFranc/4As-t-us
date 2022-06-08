@@ -1,103 +1,182 @@
 /* ******************** NAVBAR MENU ********************** */
 
-nav.navbar {
-  background-color: $NB1000;
-  height:80px;/*!Ne pas enlever bar menu fixe!!!!*/
+header {
+    background: $NB000;
+    height:70px;/*!Ne pas enlever bar menu fixe*/
 }
-a.nav-link, button.navbar-toggler, a.navbar-brand {
-  color:$NB000;
+
+a.navbar-brand img {
+    width:60px;
+    height:40px;
 }
-img#img4As {
-  height:auto;
-  max-width: 80px;
-}
+
+
 a span.brand {
-  vertical-align: 50%;
-  margin-right:100px;
-  font-size:$sizeP*1.2;
-}
+  vertical-align: 25%;
+  margin-right:50px;
+  //font-size:$sizeP*1;
+}/*
 a.nav-link:hover, button.navbar-toggler:hover, a.navbar-brand:hover {
   color:$HOT900;
-}
+}*
 a span.brand:hover {
   vertical-align: 50%;
   color:$HOT900;
 }
-
-
-/*
-div.header-nav {
-  background: $HOT500;
-  height:80px;/*!Ne pas enlever bar menu fixe * /
-}
-
-a.navbar-brand img {
-  width:40px;
-  height:40px;
-}
-
-div.headerMenu {
-  width:100vw;
+*/
+div.headerNav {
+    width:100vw;
 }
 
 nav.a:hover {
-  color: $HOT500;
-  fill:rgba(255,115,5,0.8);
+    color:$HOT500;
+    fill:rgba(255,115,5,0.8);
 }
 
 nav a svg.myLogo {
     width:14px;
     height:auto;
-    fill: $NB750;
-  
-  &:hover {
+    fill:$NB750;
+}
+
+nav a svg.myLogo:hover {
     fill:rgba(255,115,5,0.8);
-  }
 }
 
 div.headerNavButtonDiv {
-  background-image: url(../../public/img/1pic.jpg);
+    background-image: url(img/LogoDev.png);
 }
 
 button div img {
-  
-  width:20px;
-  height:20px;
+    
+    width:20px;
+    height:20px;
 }
 
 button:focus div#bebe {
-  display:none;
-  width:20px;
-  height:20px;
+    display:none;
+    width:20px;
+    height:20px;
 }
 
-/* Classe principale de la barre de navigation * /
-.navbar {
-  /* Couleur de fond de la barre de navigation * /
-  background-color: $NB000;
-  border-color: $NB000;
-  font-size: $sizeP* 1.2;
+ul.navbar-nav.menu li a i {
+  margin-right:10px;
+}
+ul.navbar-nav.menu li a {
+  margin-right:25px;
+} 
 
-  /* Couleur des titres affichés dans la barre * /
-  & .navbar-brand {
-    color: $NB800;
+/* Classe principale de la barre de navigation */
+.navbar {
+    /* Couleur de fond de la barre de navigation */
+    background-color: $NB1000;
+    border-color: $NB000;
+    font-size: $sizeP* 1.2;
+}
+
+/* Couleur des titres affichés dans la barre */
+.navbar .navbar-brand {
+    color: $NB000;
     font-family: $police;
     font-size: $sizeP* 1.2;
-  
-    /* Couleur utilisée lors du passage de la souris sur un titre de la barre * /
-    &:hover, :focus {
-      color: $HOT500;
-    }
-  }
-
-  /* Couleur utilisée pour les liens * /
-  & .navbar-nav > li > a {
-    color: $NB800;
-
-    /*Couleur utilisée pour les liens lorsque la souris passe dessus * /
-    &:hover, &:focus {
-      color: $HOT500;
-    }
-  }
 }
-*/
+
+/* Couleur utilisée lors du passage de la souris sur un titre de la barre */
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: $HOT500;
+}
+   
+/* Couleur utilisée pour les liens */
+.navbar .navbar-nav > li > a {
+    color: $NB000;
+}
+   
+/*Couleur utilisée pour les liens lorsque la souris passe dessus */
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: $HOT500;
+}
+
+/* ************************** */
+/*
+.downloadFile>a {
+    font-size: $sizeP*0.8;
+    width:150px;
+}*/
+.bi.bibiToggleOpen.bi-list {
+  color:$NB000;
+}
+.modal-window {
+    position: fixed;
+    background-color: $NB250;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    & > div {
+      width: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background: $NB000;
+    }
+  }
+  
+  .modal-close {
+    color: $NB000;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+    &:hover {
+      color: $NB1000;
+    }
+  }
+/*
+  html {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  body {
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+    color: black;
+  }
+  
+  a {
+    color: inherit;
+  }
+  * /
+  .container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 1vh;
+  }
+  * /
+  .modal-window {
+    & > div {
+      border-radius: 1rem;
+    }
+  }
+  */
