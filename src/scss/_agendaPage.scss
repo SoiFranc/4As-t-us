@@ -19,11 +19,13 @@ $tangerine: #f86a6c;
 	background-color: $white;
 	box-shadow: 5px 5px 72px rgba(30, 46, 50, 0.5);
 	color: $black;
+/********************************/
 
-	@media screen and (min-width:55em) {
-		margin: auto;
-		top: 5%;
+@media screen and (min-width:55em) {
+	margin: auto;
+	top: 5%;
 	}
+
 }
 
 /*** Title bar ***/
@@ -123,20 +125,7 @@ $tangerine: #f86a6c;
 	@media screen and (min-width:55em) {
 		width: 40%;
 	}
-/*
-	&:after {
-		content: "";
-		display: inline;
-		position: absolute;
-		width: 10px;
-		height: 10px;
-		right: 0;
-		top: 5px;
-		margin: auto;
-		border-top: 1px solid rgb(0, 0, 0);
-		border-right: 1px solid rgb(0, 0, 0);
-		transform: rotate(135deg);
-	}*/
+
 }
 
 .title-bar__minimize,
@@ -166,7 +155,7 @@ $tangerine: #f86a6c;
 	display: inline-block;
 	vertical-align: top;
 	position: relative;
-	float: right;
+	//float: right;
 	width: auto;
 
 	&:before,
