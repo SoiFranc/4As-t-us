@@ -16,13 +16,16 @@ widthVideo: 320px
 heightVideo: 240px
 linkVideo: ./vid/nextEv.mp4
 ---
-      <div id="mediatheque" class="mainImgIntro container">
+      <div id="mediatheque" class="mainImgIntro container" style="background-image:url(./img/4Astuces.jpg);background-size:100%;background-repeat: no-repeat;">
         <div>
-          <img src="./img/4Astuces.jpg" style="width:100%;height:auto;"/>
-          <h1>Bienvenu à l'association 4As-t-us<br><span class="lg">Le Poker ?<br>Instant de toutes les émotions !</span></h1>
+ 
+
+          <!--<img src="./img/4Astuces.jpg" style="width:100%;height:auto;"/>-->
+          <h1>Bienvenu<br><span class="lg">à l'association<br>4As-t-us</span></h1>
+          <h2>Le Poker ?<br>Instant de toutes les émotions !</h2>
           <p>Acmes 2012, Poker Proin mi nibh, rutrum malesuada turpis eu, placerat blandit sapien. Nulla tincidunt justo neque, sed hendrerit lacus tempor ac. Quisque ipsum libero, placerat id tortor et, consequat porttitor nunc. Nam euismod, erat et efficitur volutpat, mauris ligula egestas quam, in sollicitudin eros purus id diam.
           </p>
-          <h2>{{Nametheque}}</h2>
+          <h2 id="mediatheque_h2Infotheque">{{Nametheque}}</h2>
             <div id="infotheque" class="mediatheque col-md-12">
               {% include "artNextEv.njk" %}
               {% include "artLastEv.njk" %}
