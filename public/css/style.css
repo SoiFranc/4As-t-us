@@ -58,21 +58,7 @@ table {
 
 /* import icons bootsrap5*/
 /* import fonts*/
-/* ******************** var color this style is recoded to $var hidden ******************** * /
-:root {
-    --NB000: #fff;/*white - rgb(255,255,255) - hsl(0, 0%, 100%)* /
-    --NB250: #E6E6E8;/*rgb(230,230,232) - hsl(240, 4%, 91%)* /
-    --NB500: #cacaca;/*rgb(202,202,202) - hsl(0, 0%, 79%)* /
-    --NB750: #878787;/*rgb(135,135,135) - hsl(0, 0%, 53%)* /
-    --NB800: #404040;/*rgb(64,64,64) - hsl(0, 0%, 25%)* /
-    --NB1000: #000;/*black - rgb(0,0,0) - hsl(0, 0%, 0%)* /
-    --HOT100: #FFF800;/*rgb(255,248,0) - hsl(58, 100%, 50%)* /
-    --HOT500: #FF7305;/*rgb(255,115,5) - hsl(26, 100%, 51%)* /
-    --HOT900: #FF0000;/*red - rgb(255,0,0) - hsl(0, 100%, 50%)* /
-    --police: 'Fredericka the Great', arial, sans-serif, system-ui, roboto;
-}    
-
-/* ******************** var font-size  ******************** */
+/* ******************** Variables  ******************** */
 /*100%*/
 /* ******************** GENERAL ********************** */
 h1 {
@@ -143,15 +129,6 @@ a span.brand {
   margin-right: 50px;
 }
 
-/*
-a.nav-link:hover, button.navbar-toggler:hover, a.navbar-brand:hover {
-  color:$HOT900;
-}*
-a span.brand:hover {
-  vertical-align: 50%;
-  color:$HOT900;
-}
-*/
 div.headerNav {
   width: 100vw;
 }
@@ -227,11 +204,6 @@ ul.navbar-nav.menu li a {
 }
 
 /* ************************** */
-/*
-.downloadFile>a {
-    font-size: $sizeP*0.8;
-    width:150px;
-}*/
 .bi.bibiToggleOpen.bi-list {
   color: #fff;
 }
@@ -282,46 +254,7 @@ ul.navbar-nav.menu li a {
   color: #000;
 }
 
-/*
-  html {
-    font-size: 18px;
-    line-height: 1.4;
-  }
-
-  body {
-    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    font-weight: 600;
-    background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
-    color: black;
-  }
-
-  a {
-    color: inherit;
-  }
-  * /
-  .container {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 1vh;
-  }
-  * /
-  .modal-window {
-    & > div {
-      border-radius: 1rem;
-    }
-  }
-  */
 /* ******************** SECTION ACCUEIL ********************** */
-/*div.mainImgIntro.container {
-  position: absolute;
-  width:100vw;
-  height:100%;
-  margin: 0 10%;
-  background:url(./img/4Astuces.jpg) center no-repeat;
-  background-size:100%;
-}*/
 div.mainImgIntro.container h1 {
   margin-top: -100px;
   text-align: center;
@@ -344,7 +277,7 @@ div.mediatheque {
 
 /* ******************** SECTION AGENDA ********************** */
 caption#classement {
-  color: white;
+  color: #fff;
   font-size: 30px;
 }
 
@@ -359,14 +292,14 @@ table.classement {
 }
 
 thead, th, td, tr, tbody {
-  color: white;
-  border: 1px solid white;
+  color: #fff;
+  border: 1px solid #fff;
   text-align: center;
 }
 
 tbody > tr:nth-child(even) {
-  background-color: rgb(194, 193, 193);
-  color: black;
+  background-color: #E6E6E8;
+  color: #000;
 }
 
 thead > tr {
@@ -476,7 +409,6 @@ div.winamaxPage:last-child {
   transition-duration: 0.3s;
 }
 
-/* ******************** NEXTEVPAGE ********************** */
 /*************************************************************/
 /********************* Responsive Tablet *********************/
 @media only screen and (min-width: 415px) {
@@ -500,10 +432,6 @@ div.winamaxPage:last-child {
     display: none;
   }
 
-  /*** (lg) HOMEPAGE (lg) ***/
-  /*img#1.imgSideImgLg {
-    margin-left: 1px;
-  }*/
   div.homepage {
     display: flex;
     flex-direction: row;
@@ -566,42 +494,8 @@ div.article_Container > h4 {
   text-align: center;
 }
 
-/*
-* {
-	outline: none;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 100%;
-}
-
-body {
-	height: 100%;
-	padding: 1rem;
-	background-color: #f6f5f1;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
-	background-image: linear-gradient(45deg, $tangerine 0%, $pink 100%);
-
-  @media screen and (min-width:55em) {
-    height: 100vh;
-    margin: 0;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-	-webkit-font-smoothing: antialiased;
-}
-
-p, span, ul, li {
-	color: lighten($black, 20%);
-	font-weight: 100;
-	-webkit-font-smoothing: subpixel-antialiased;
-	font-size: 1rem;
-}
-*/
+/*** Variables ***/
+/*** Calendar Container ***/
 .calendar-contain {
   position: relative;
   left: 0;
@@ -615,6 +509,7 @@ p, span, ul, li {
   background-color: #f5f7f6;
   box-shadow: 5px 5px 72px rgba(30, 46, 50, 0.5);
   color: #040605;
+  /********************************/
 }
 
 @media screen and (min-width: 55em) {
@@ -623,6 +518,7 @@ p, span, ul, li {
     top: 5%;
   }
 }
+/*** Title bar ***/
 .title-bar {
   position: relative;
   width: 100%;
@@ -715,20 +611,6 @@ p, span, ul, li {
   width: 40%;
   padding: 0 0.5rem;
   text-align: left;
-  /*
-  	&:after {
-  		content: "";
-  		display: inline;
-  		position: absolute;
-  		width: 10px;
-  		height: 10px;
-  		right: 0;
-  		top: 5px;
-  		margin: auto;
-  		border-top: 1px solid rgb(0, 0, 0);
-  		border-right: 1px solid rgb(0, 0, 0);
-  		transform: rotate(135deg);
-  	}*/
 }
 
 @media screen and (min-width: 55em) {
@@ -765,7 +647,6 @@ p, span, ul, li {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  float: right;
   width: auto;
 }
 
@@ -795,21 +676,7 @@ p, span, ul, li {
   transform: rotate(-45deg);
 }
 
-/*
-.title-bar .title-bar__close:hover {
-  // background-color: #E04343;
-}
-
-.title-bar div:hover:after,
-.title-bar div:hover:before {
-  // border-color: #333333;
-}
-
-.title-bar .title-bar__close:hover:after,
-.title-bar .title-bar__close:hover:before {
-  // border-color: #FFFFFF;
-}
-*/
+/*** Side bar ***/
 .calendar__sidebar {
   width: 100%;
   margin: 0 auto;
@@ -900,6 +767,7 @@ p, span, ul, li {
   font-weight: 900;
 }
 
+/*** Calendar Days ***/
 .calendar__days {
   display: flex;
   flex-flow: column wrap;
@@ -980,96 +848,6 @@ p, span, ul, li {
 }
 .calendar__task.calendar__task--today {
   color: #fd588a;
-}
-
-.cdoPage input {
-  position: absolute;
-  opacity: 0;
-  margin-top: 80vh;
-  cursor: pointer;
-  color: white;
-}
-
-.cdoPage label {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border: solid 2px white;
-  border-radius: 999px;
-  background-color: transparent;
-  margin: 80vh 6px 0 6px;
-  z-index: 2;
-  cursor: pointer;
-  transition-duration: 0.4s;
-}
-
-.cdoPage input:checked + label {
-  background-color: white;
-}
-
-.cdoPage input:focus + label {
-  box-shadow: 0 0 0 2px teal, 0 0 18px white;
-}
-
-.cdoPage div.slide {
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-y: 20%;
-  width: 100%;
-  height: 80%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transform: translateX(-100%);
-  transition-duration: 0.4s;
-  opacity: 1;
-}
-
-.cdoPage input:checked ~ .slide {
-  transform: translateX(100%);
-}
-
-.cdoPage input:checked + label + .slide {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-.bg1 {
-  background-image: url(../img/price1.jpeg);
-}
-
-.bg2 {
-  background-image: url(../img/price1a.jpeg);
-}
-
-.bg3 {
-  background-image: url(../img/price1b.jpeg);
-}
-
-.bg4 {
-  background-image: url(../img/price2.jpeg);
-}
-
-.bg5 {
-  background-image: url(../img/price2a.jpeg);
-}
-
-.bg6 {
-  background-image: url(../img/price2b.jpeg);
-}
-
-.bg7 {
-  background-image: url(../img/price3.jpeg);
-}
-
-.bg8 {
-  background-image: url(../img/price3a.jpeg);
-}
-
-.bg9 {
-  background-image: url(../img/price3b.jpeg);
 }
 
 /********************* FOOTER ***********************/
