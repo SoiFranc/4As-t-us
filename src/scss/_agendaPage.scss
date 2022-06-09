@@ -1,51 +1,11 @@
-// Variables
-// ----------------------------- //
+/*** Variables ***/
 $black: #040605;
 $white: #f5f7f6;
 $blue-white: #e1e7e8;
 $pink: #fd588a;
 $tangerine: #f86a6c;
 
-// Global
-// ----------------------------- //
-/*
-* {
-	outline: none;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 100%;
-}
-
-body {
-	height: 100%;
-	padding: 1rem;
-	background-color: #f6f5f1;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizeLegibility;
-	font-family: -apple-system, BlinkMacSystemFont, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, "Helvetica Neue", sans-serif;
-	background-image: linear-gradient(45deg, $tangerine 0%, $pink 100%);
-
-  @media screen and (min-width:55em) {
-    height: 100vh;
-    margin: 0;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-	-webkit-font-smoothing: antialiased;
-}
-
-p, span, ul, li {
-	color: lighten($black, 20%);
-	font-weight: 100;
-	-webkit-font-smoothing: subpixel-antialiased;
-	font-size: 1rem;
-}
-*/
-// Calendar Container
-// ----------------------------- //
+/*** Calendar Container ***/
 .calendar-contain {
 	position: relative;
 	left: 0;
@@ -66,8 +26,7 @@ p, span, ul, li {
 	}
 }
 
-// Title bar
-// ----------------------------- //
+/*** Title bar ***/
 .title-bar {
 	position: relative;
 	width: 100%;
@@ -241,24 +200,8 @@ p, span, ul, li {
 .title-bar .title-bar__close:after {
   transform: rotate(-45deg);
 }
-/*
-.title-bar .title-bar__close:hover {
-  // background-color: #E04343;
-}
 
-.title-bar div:hover:after,
-.title-bar div:hover:before {
-  // border-color: #333333;
-}
-
-.title-bar .title-bar__close:hover:after,
-.title-bar .title-bar__close:hover:before {
-  // border-color: #FFFFFF;
-}
-*/
-
-// Side bar
-// ----------------------------- //
+/*** Side bar ***/
 .calendar__sidebar {
 	width: 100%;
 	margin: 0 auto;
@@ -347,8 +290,7 @@ p, span, ul, li {
 }
 
 
-// Calendar Days
-// ----------------------------- //
+/*** Calendar Days ***/
 .calendar__days {
 	display: flex;
 	flex-flow: column wrap;

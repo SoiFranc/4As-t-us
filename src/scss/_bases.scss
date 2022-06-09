@@ -4,21 +4,7 @@
 /* import fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
-/* ******************** var color this style is recoded to $var hidden ******************** * /
-:root {
-    --NB000: #fff;/*white - rgb(255,255,255) - hsl(0, 0%, 100%)* /
-    --NB250: #E6E6E8;/*rgb(230,230,232) - hsl(240, 4%, 91%)* /
-    --NB500: #cacaca;/*rgb(202,202,202) - hsl(0, 0%, 79%)* /
-    --NB750: #878787;/*rgb(135,135,135) - hsl(0, 0%, 53%)* /
-    --NB800: #404040;/*rgb(64,64,64) - hsl(0, 0%, 25%)* /
-    --NB1000: #000;/*black - rgb(0,0,0) - hsl(0, 0%, 0%)* /
-    --HOT100: #FFF800;/*rgb(255,248,0) - hsl(58, 100%, 50%)* /
-    --HOT500: #FF7305;/*rgb(255,115,5) - hsl(26, 100%, 51%)* /
-    --HOT900: #FF0000;/*red - rgb(255,0,0) - hsl(0, 100%, 50%)* /
-    --police: 'Fredericka the Great', arial, sans-serif, system-ui, roboto;
-}    
-
-/* ******************** var font-size  ******************** */
+/* ******************** Variables  ******************** */
 $sizeP: 1.2em;/*100%*/
 $NB000: #fff;
 $NB250: #E6E6E8;
@@ -60,7 +46,6 @@ p {
     font-size: $sizeP* 1;
     margin-top:15px;
 }
-
 
 span.md, span.lg, div.md.map, div.lg.map, .xl, div#divSideImglg {
     display:none;

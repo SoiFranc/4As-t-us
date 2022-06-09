@@ -4,7 +4,7 @@
   span.md, div.md.map, #mdImg2 {
       display:unset;
   }
-  
+
 }
 
 
@@ -21,12 +21,6 @@
   .noLg {
       display:none;
   }
-
-
-  /*** (lg) HOMEPAGE (lg) ***/
-  /*img#1.imgSideImgLg {
-    margin-left: 1px;
-  }*/
   div.homepage {
     display:flex;
     flex-direction:row;
@@ -44,6 +38,7 @@
     flex-direction:row;
     justify-content:space-between;
   }
+
 }
 /***************************************************************/
 /******************* Responsive Desktop xl ********************/
@@ -54,4 +49,5 @@
   .xl {
       display: unset;
   }
+  
 }

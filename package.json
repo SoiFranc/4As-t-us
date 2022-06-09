@@ -10,13 +10,7 @@
     "build:eleventy": "npx @11ty/eleventy",
     "startc": "npm run watch:sass",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:sass --parallel build:*",
-    "0ld-starta": "npm run watch:sass && npm run watch:eleventy",
-    "0ld-builda": "npm run build:sass && npm run build:eleventy",
-    "0ld-build:mincss": "npx postcss style.css --use cssnano -o public/css/style.min.css",
-    "0ld-build:elevent": "npx @11ty/eleventy",
-    "0ld-def": "npm-run-all build:sass --parallel watch:*",
-    "0ld-deff": "npm-run-all build:*"
+    "build": "npm-run-all build:sass --parallel build:*"
   },
   "repository": {
     "type": "git",
