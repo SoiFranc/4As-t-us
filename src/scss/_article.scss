@@ -18,6 +18,10 @@ div.mediathequeItem>a>div>h4 {
 div.container.extract {
   padding: 0 5px;
 }
+div.container.extract span {
+  color:$HOT900;
+  font-size: $sizeP*0.8;
+}
 /**** articles Pages ****/
 div.article_Container>h4 {
   text-align:center;

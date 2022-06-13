@@ -24,7 +24,7 @@ div.mediatheque {
 }
 
 
-/* ******************** SECTION AGENDA ********************** */
+/* ******************** SECTION CLASSEMENT ********************** */
 caption#classement {
   color:$NB000;
   font-size: 30px;
@@ -43,11 +43,11 @@ thead, th, td, tr,tbody {
   text-align:center;
 }
 tbody>tr:nth-child(even) {
-  background-color: $NB250;
+  background-color: $NB500;
   color:$NB1000;
 }
 thead>tr {
-  background-color: rgb(222, 115, 153);
+  background-color: $HOT900;
   width:100%;
 }
 th{
@@ -61,7 +61,7 @@ td {
 
 /* ******************** SECTION WINAMAX ********************** */
 div#winamax {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 div.containerCta {
   display:flex;
