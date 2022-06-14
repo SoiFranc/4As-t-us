@@ -69,7 +69,6 @@ h1 {
 }
 
 h2 {
-  text-align: center;
   font-size: 1.92em;
   margin-bottom: 40px;
   margin-top: 40px;
@@ -256,12 +255,12 @@ ul.navbar-nav.menu li a {
 
 /* ******************** SECTION ACCUEIL ********************** */
 div.mainImgIntro.container h1 {
-  margin-top: 80px;
   text-align: center;
+  margin-top: 80px;
 }
 
 div.mainImgIntro.container h2 {
-  margin-top: 40%;
+  margin-top: 42%;
   text-align: center;
 }
 
@@ -313,12 +312,7 @@ thead > tr {
   width: 100%;
 }
 
-th {
-  width: 25%;
-  padding: 1%;
-}
-
-td {
+th, td {
   width: 25%;
   padding: 1%;
 }
@@ -337,8 +331,8 @@ div.containerCta {
 section.container.padded {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0 5%;
 }
 
@@ -369,8 +363,8 @@ div.column {
 
 .box {
   border-radius: 4px;
-  background: #f2f2f2 transparent;
-  border: 1px solid #e3e3e3;
+  background: #fff transparent;
+  border: 1px solid #fff;
   padding: 15px;
 }
 
@@ -385,7 +379,7 @@ div.column {
   width: 100%;
 }
 
-div.box > p, div.box > a {
+div.box > p, div.box > a, div.winamaxPage:last-child {
   text-align: center;
 }
 
@@ -393,23 +387,19 @@ div.box > p, div.box > a {
   margin: 5% 11%;
 }
 
-div.winamaxPage:last-child {
-  text-align: center;
-}
-
 #btnOld {
   padding: 2px 5px;
-  border: 1px solid gray;
+  border: 1px solid #878787;
   border-radius: 4px;
-  background-color: gray;
-  color: black;
+  background-color: #878787;
+  color: #000;
 }
 
 #btnOld:hover {
-  border: 1px solid rgb(108, 108, 108);
+  border: 1px solid #878787;
   border-radius: 4px;
-  background-color: rgb(108, 108, 108);
-  color: black;
+  background-color: #878787;
+  color: #000;
   transition-property: background-color transform color;
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
@@ -434,6 +424,10 @@ div.winamaxPage:last-child {
     display: unset;
   }
 
+  div#divSideImglg {
+    display: block;
+  }
+
   .noLg {
     display: none;
   }
@@ -441,7 +435,8 @@ div.winamaxPage:last-child {
   div.homepage {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin: 100px auto 0;
+    text-align: center;
   }
 
   section.container.padded {
@@ -461,7 +456,7 @@ div.winamaxPage:last-child {
 /***************************************************************/
 /******************* Responsive Desktop xl ********************/
 @media only screen and (min-width: 1192px) {
-  .nolx {
+  .noxl {
     display: none;
   }
 
@@ -505,7 +500,6 @@ div.article_Container > h4 {
   text-align: center;
 }
 
-/*** Variables ***/
 /*** Calendar Container ***/
 .calendar-contain {
   position: relative;
@@ -519,9 +513,9 @@ div.article_Container > h4 {
   /*450px;*/
   margin: 1rem auto;
   /*1rem auto*/
-  background-color: #f5f7f6;
+  background-color: #fff;
   box-shadow: 5px 5px 72px rgba(30, 46, 50, 0.5);
-  color: #040605;
+  color: #000;
   /********************************/
 }
 
@@ -547,7 +541,7 @@ div.calendar-contain iframe {
   width: 100%;
   display: table;
   text-align: right;
-  background: #f5f7f6;
+  background: #fff;
   padding: 0.5rem;
   margin-bottom: 0;
 }
@@ -589,7 +583,7 @@ div.calendar-contain iframe {
   right: 0;
   margin: auto;
   height: 1px;
-  background: #040605;
+  background: #000;
 }
 
 .burger__lines:before, .burger__lines:after {
@@ -598,7 +592,7 @@ div.calendar-contain iframe {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #040605;
+  background-color: #000;
   content: "";
 }
 
@@ -661,7 +655,7 @@ div.calendar-contain iframe {
   left: 30%;
   content: " ";
   position: absolute;
-  border-color: #8e8e8e;
+  border-color: #878787;
   border-style: solid;
   border-width: 0 0 2px 0;
 }
@@ -704,7 +698,7 @@ div.calendar-contain iframe {
   width: 100%;
   margin: 0 auto;
   float: none;
-  background: linear-gradient(120deg, #eff3f3, #e1e7e8);
+  background: linear-gradient(120deg, #d7d7d7, #cacaca);
   padding-bottom: 0.7rem;
 }
 
@@ -719,7 +713,7 @@ div.calendar-contain iframe {
 }
 .calendar__sidebar .content {
   padding: 2rem 1.5rem 2rem 4rem;
-  color: #040605;
+  color: #000;
 }
 
 .sidebar__nav {
@@ -728,7 +722,7 @@ div.calendar-contain iframe {
   justify-content: flex-start;
   margin-bottom: 0.9rem;
   padding: 0.7rem 1rem;
-  background-color: #f5f7f6;
+  background-color: #fff;
 }
 
 .sidebar__nav-item {
@@ -748,7 +742,7 @@ div.calendar-contain iframe {
 
 .sidebar__list-item {
   margin: 1.2rem 0;
-  color: #2d4338;
+  color: #333333;
   font-weight: 100;
   font-size: 1rem;
 }
@@ -764,11 +758,11 @@ div.calendar-contain iframe {
   }
 }
 .sidebar__list-item--complete {
-  color: rgba(4, 6, 5, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sidebar__list-item--complete .list-item__time {
-  color: rgba(4, 6, 5, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sidebar__heading {
@@ -801,7 +795,7 @@ div.calendar-contain iframe {
   height: 100%;
   font-size: 12px;
   padding: 0.8rem 0 1rem 1rem;
-  background: #f5f7f6;
+  background: #fff;
 }
 
 @media screen and (min-width: 55em) {
@@ -818,7 +812,7 @@ div.calendar-contain iframe {
 .top-bar__days {
   width: 100%;
   padding: 0 5px;
-  color: #2d4338;
+  color: #333333;
   font-weight: 100;
   -webkit-font-smoothing: subpixel-antialiased;
   font-size: 1rem;
@@ -838,7 +832,7 @@ div.calendar-contain iframe {
 }
 
 .calendar__date {
-  color: #040605;
+  color: #000;
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 0.7;
@@ -855,11 +849,11 @@ div.calendar-contain iframe {
 }
 
 .calendar__week .today .calendar__date {
-  color: #fd588a;
+  color: #FF7305;
 }
 
 .calendar__task {
-  color: #040605;
+  color: #000;
   display: flex;
   font-size: 0.8rem;
 }
@@ -870,7 +864,7 @@ div.calendar-contain iframe {
   }
 }
 .calendar__task.calendar__task--today {
-  color: #fd588a;
+  color: #FF7305;
 }
 
 /********************* FOOTER ***********************/
@@ -879,18 +873,18 @@ footer {
   bottom: 0px;
 }
 
-div.footer-copyright {
+i.bi.bibiUp.bi-chevron-up, div.footer-copyright {
   background-color: #000;
   color: #fff;
   font-size: 1.2em;
   text-align: center;
+}
+
+div.footer-copyright {
   margin-top: 50px;
 }
 
 i.bi.bibiUp.bi-chevron-up {
-  font-size: 1.2em;
-  color: #fff;
-  text-align: center;
   margin-top: 5px;
   padding-left: 50%;
 }
@@ -902,7 +896,6 @@ div.pageUp {
 
 div.pageUp p {
   text-align: center;
-  margin: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

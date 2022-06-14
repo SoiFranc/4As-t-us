@@ -3,27 +3,26 @@ footer {
   margin-top: 150px;
   bottom: 0px;
 }
-div.footer-copyright {
+%footstyle {
   background-color: $NB1000;
   color:$NB000;
   font-size: $sizeP* 1;
   text-align: center;
+}
+div.footer-copyright {
+  @extend %footstyle;
   margin-top:50px;
 }
 i.bi.bibiUp.bi-chevron-up {
-  font-size: $sizeP* 1;
-  color:$NB000;
-  text-align: center;
+  @extend %footstyle;
   margin-top:5px;
   padding-left: 50%;
 }
 div.pageUp {
   margin: 0px;
-
-  
   color: NB000;
+
   & p {
     text-align: center;
-    margin:0px;
   }
 }

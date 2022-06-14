@@ -19,13 +19,12 @@ $police: 'Fredericka the Great', arial, sans-serif, system-ui, roboto;
 
 /* ******************** GENERAL ********************** */
 h1 {
-    text-align: center;
-    font-size: $sizeP* 2;
-    font-family: $police;
-    margin-bottom: 80px;
-}
+  text-align: center;
+  font-size: $sizeP* 2;
+  font-family: $police;
+  margin-bottom: 80px;
+}    
 h2 {
-    text-align: center;
     font-size: $sizeP*1.6;
     margin-bottom:40px;
     margin-top:40px;
